@@ -1,0 +1,64 @@
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+/* Section styling for each solution */
+section.solution {
+    background-color: white;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #28a745; /* Stylish green border */
+}
+
+section.solution h2 {
+    font-size: 1.5rem;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+/* Paragraph styling */
+section.solution p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Bolded repeated words within paragraphs */
+strong {
+    font-weight: bold;
+    color: #28a745; /* Green color for bolded text */
+}
+
+/* Footer styling */
+footer {
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
