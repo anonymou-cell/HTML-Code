@@ -1,3 +1,4 @@
+/* Reset */
 body, h1, h2, p {
     margin: 0;
     padding: 0;
@@ -9,6 +10,7 @@ body {
     background-color: #f4f4f9;
     color: #333;
     line-height: 1.6;
+    padding-bottom: 60px; /* Space for footer */
 }
 
 /* Header styling */
@@ -28,10 +30,11 @@ h1 {
 section.solution {
     background-color: white;
     padding: 20px;
-    margin: 15px;
+    margin: 15px auto;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-left: 4px solid #28a745; /* Stylish green border */
+    max-width: 800px; /* Limit width for readability */
 }
 
 section.solution h2 {
@@ -47,18 +50,48 @@ section.solution p {
     margin-bottom: 10px;
 }
 
-/* Bolded repeated words within paragraphs */
-strong {
-    font-weight: bold;
-    color: #28a745; /* Green color for bolded text */
-}
-
 /* Footer styling */
 footer {
     background-color: #28a745;
     color: white;
     text-align: center;
-    position: fixed;
+    padding: 10px 20px;
+    position: relative; /* Allow flexibility */
     bottom: 0;
     width: 100%;
+    box-sizing: border-box;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    section.solution {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    section.solution h2 {
+        font-size: 1.25rem;
+    }
+
+    section.solution p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
 }
